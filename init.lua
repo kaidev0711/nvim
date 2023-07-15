@@ -1,0 +1,6 @@
+require("Lazy")
+require("options")
+require("keymaps")
+require("autocmds")
+require("provider")
+require("load_require")
