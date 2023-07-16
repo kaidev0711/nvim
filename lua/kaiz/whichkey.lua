@@ -48,7 +48,7 @@ function M.config()
 				v = { "<cmd>vsplit<cr>", "Vsplit" },
 			},
 			o = { "<cmd>SymbolsOutline<cr>", "Symbols Outline" },
-      r = {
+			r = {
 				name = "refactoring",
 				i = { " <Esc><Cmd>lua require('refactoring').refactor('Inline Variable')<CR>", "Inline Variable" },
 				p = { " <Esc><Cmd>lua require('refactoring').debug.printf({below = false})<CR>", "Debug Print" },
@@ -99,7 +99,7 @@ function M.config()
 				"<cmd>lua require('telescope.builtin').colorscheme({enable_preview = true})<cr>",
 				"Colorscheme with Preview",
 			},
-      d = {"<cmd>Telescope file_browser path=%:p:h<CR>", "Browse Files"}
+			d = { "<cmd>Telescope file_browser path=%:p:h<CR>", "Browse Files" },
 		},
 		g = {
 			name = "Git",
@@ -244,12 +244,12 @@ function M.config()
 				l = { "<cmd>GoCodeLenAct<cr>", "Toggle Lens" },
 				a = { "<cmd>GoCodeAction<cr>", "Code Action" },
 			},
-     	m = {
-        name = "markdown",
-        p = { ":MarkdownPreview<cr>", "preview" },
-        d = { ":MarkdownPreviewStop<cr>", "stop" },
-        t = { ":MarkdownPreviewToggle<cr>", "toggle" },
-      },
+			m = {
+				name = "markdown",
+				p = { ":MarkdownPreview<cr>", "preview" },
+				d = { ":MarkdownPreviewStop<cr>", "stop" },
+				t = { ":MarkdownPreviewToggle<cr>", "toggle" },
+			},
 		},
 	}
 	which_key.setup(setup)
