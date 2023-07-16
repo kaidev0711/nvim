@@ -21,6 +21,11 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+-- Resize window using <shift> arrow keys
+keymap("n", "<A-Up>", "<cmd>resize +2<CR>")
+keymap("n", "<A-Down>", "<cmd>resize -2<CR>")
+keymap("n", "<A-Left>", "<cmd>vertical resize -2<CR>")
+keymap("n", "<A-Right>", "<cmd>vertical resize +2<CR>")
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
