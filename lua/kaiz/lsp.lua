@@ -1,7 +1,7 @@
 local M = {
 	"neovim/nvim-lspconfig",
 	lazy = false,
-  event = { "BufReadPre", "BufNewFile" },
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		{
 			"hrsh7th/cmp-nvim-lsp",
@@ -37,7 +37,7 @@ function M.config()
 	end
 
 	local lspconfig = require("lspconfig")
-	local on_attach = function(client, bufnr)	
+	local on_attach = function(client, bufnr)
 		lsp_keymaps(bufnr)
 		require("illuminate").on_attach(client)
 	end
@@ -72,11 +72,11 @@ function M.config()
 	local config = {
 		-- disable virtual text
 		virtual_text = false,
-    -- virtual_text = {
-    --     spacing = 4,
-    --     source = "if_many",
-    --     prefix = "●",
-    -- },
+		-- virtual_text = {
+		--     spacing = 4,
+		--     source = "if_many",
+		--     prefix = "●",
+		-- },
 		-- show signs
 		signs = {
 			active = signs,

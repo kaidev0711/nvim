@@ -23,13 +23,14 @@ function M.config()
 
 			formatting.black.with({ extra_args = { "--fast" } }),
 			diagnostics.ruff,
-      --docker 
-      diagnostics.hadolint,
+			--docker
+			diagnostics.hadolint,
 
 			formatting.stylua,
 			-- Go
 			formatting.gofumpt,
 			formatting.goimports_reviser,
+			formatting.golines,
 			-- b.diagnostics.revive,
 			-- on_attach = function(client, bufnr)
 			--   if client.supports_method("textDocument/formatting") then
