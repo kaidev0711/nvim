@@ -4,9 +4,9 @@ return {
 	priority = 1000,
 	name = "monokai-pro",
 	config = function()
-    		require("monokai-pro").setup({
-			    background_clear = { "float_win" },
+		require("monokai-pro").setup({
+			background_clear = { "float_win" },
 		})
 		vim.cmd([[colorscheme monokai-pro]])
-  	end
+	end,
 }
