@@ -5,6 +5,7 @@ return {
 		-- enabled = enabled_inlay_hints,
 		opts = {
 			debug_mode = true,
+			inlay_hints = { type_hints = { prefix = "=> " } },
 		},
 		config = function(_, options)
 			vim.api.nvim_create_augroup("LspAttach_inlayhints", {})

@@ -30,7 +30,12 @@ function M.config()
 			-- Go
 			formatting.gofumpt,
 			formatting.goimports_reviser,
-			formatting.golines,
+			formatting.golines.with({
+				extra_args = {
+					"--max-len=180",
+					"--base-formatter=gofumpt",
+				},
+			}),
 			-- b.diagnostics.revive,
 			-- on_attach = function(client, bufnr)
 			--   if client.supports_method("textDocument/formatting") then
