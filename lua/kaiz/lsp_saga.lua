@@ -8,6 +8,6 @@ local M = {
 				enable = false,
 			},
 		},
-	}, 
+	},
 }
 return M
