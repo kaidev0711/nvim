@@ -93,6 +93,7 @@ function M.config()
 			R = { "<cmd>Telescope registers<cr>", "Registers" },
 			k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
 			C = { "<cmd>Telescope commands<cr>", "Commands" },
+			U = { "<cmd>Telescope undo<cr>", "Undo" },
 			u = { "<cmd>UrlView buffer action=clipboard<cr>", "Copy url" },
 			n = { ":lua require('telescope').extensions.notify.notify()<cr>", "Notify History" },
 			P = {
