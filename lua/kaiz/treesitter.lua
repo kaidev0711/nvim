@@ -17,6 +17,7 @@ function M.config()
 	configs.setup({
 		ensure_installed = {
 			"lua",
+			"c",
 			"dockerfile",
 			"markdown",
 			"markdown_inline",
