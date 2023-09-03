@@ -34,8 +34,10 @@ function M.config()
 	local mappings = {
 		a = { "<cmd>Alpha<cr>", "Alpha" },
 		q = { ":q<cr>", "Quit" },
+		s = { ":w<cr>", "Save" },
 		Q = { ":wq<cr>", "Save & Quit" },
 		E = { ":e ~/.config/nvim/init.lua<cr>", "Edit config" },
+		-- n = { ":e ~/notes/backend.md<cr>", "notes"},
 		k = {
 			name = "other",
 			n = {
